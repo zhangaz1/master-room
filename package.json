@@ -1,0 +1,47 @@
+{
+  "name": "master-room",
+  "version": "0.0.1",
+  "description": "chat room for client* <=> 1master",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp allTest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangaz1/master-room.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "chat",
+    "room",
+    "router"
+  ],
+  "bugs": {
+    "url": "https://github.com/zhangaz1/master-room/issues"
+  },
+  "homepage": "https://github.com/zhangaz1/master-room#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-debug": "^2.0.1",
+    "gulp-dest": "^0.2.3",
+    "gulp-help": "^1.3.4",
+    "gulp-jshint": "^1.10.0",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-protractor": "^3.0.0",
+    "gulp-sequence": "^0.3.2",
+    "gulp-typescript": "^3.2.1",
+    "gulp-watch": "^4.3.11",
+    "jshint-stylish": "^1.0.1",
+    "mocha": "^3.2.0",
+    "mocha-sinon": "^1.1.6",
+    "protractor": "^4.0.14",
+    "require-dir": "^0.3.0",
+    "should": "^11.1.2",
+    "sinon": "^1.17.6",
+    "typescript": "^2.4.2"
+  }
+}
