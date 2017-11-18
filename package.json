@@ -2,7 +2,7 @@
   "name": "master-room",
   "version": "0.0.1",
   "description": "chat room for client* <=> 1master",
-  "main": "./dest/src/index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "gulp allTest"
   },
