@@ -12,6 +12,7 @@ describe('test Room', function () {
 	let roomName = null;
 	let master = null;
 	let room = null;
+	let member = null;
 
 	beforeEach(function () {
 		roomName = 'test room';
@@ -33,6 +34,16 @@ describe('test Room', function () {
 
 		room.should.has.property('master')
 			.be.exactly(master);
+
+		room.should.has.property('members')
+			.be.eql([]);
+	});
+
+	it('should join member', function () {
+		room.join(member);
+
+		room.should.has.property('members')
+			.be.eql([member]);
 	});
 
 });

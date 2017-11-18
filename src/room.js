@@ -16,7 +16,7 @@ class Room extends EventEmitter {
 	}
 
 	join(member) {
-
+		this.members.push(member);
 	}
 }
 
