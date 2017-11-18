@@ -1,3 +1,1 @@
-import all from './src/index.js';
-
-module.exports = all;
+module.exports = require('./src/index.js');
