@@ -1,7 +1,9 @@
-const EventEmitter = require('events').EventEmitter;
-
 'use strict';
 
+
+const {
+	EventEmitter
+} = require('./utils.js');
 
 class Room extends EventEmitter {
 

@@ -1,7 +1,9 @@
-const EventEmitter = require('events').EventEmitter;
-
 'use strict';
 
+
+const {
+	EventEmitter
+} = require('./../src/utils.js');
 
 let Room = require('./../src/room.js');
 
