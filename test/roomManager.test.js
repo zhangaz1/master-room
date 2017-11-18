@@ -3,7 +3,7 @@
 
 const roomManager = require('./../src/roomManager.js');
 
-describe('test Room', function () {
+describe('test Room Manager', function () {
 
 	const roomName1 = 'test room-1';
 	const master1 = {};

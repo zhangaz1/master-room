@@ -1,16 +1,30 @@
+const EventEmitter = require('events').EventEmitter;
+
 'use strict';
 
 
 let Room = require('./../src/room.js');
 
 describe('test Room', function () {
-	const roomName = 'test room';
-	const master = {};
+
+	let roomName = null;
+	let master = null;
+	let room = null;
+
+	beforeEach(function () {
+		roomName = 'test room';
+		master = {};
+
+		room = new Room(roomName, master);
+	});
+
+	it('should be a class(Function)', function () {
+		Room.should.be.a.Function();
+	});
 
 	it('should can new a Room', function () {
-		const room = new Room(roomName, master);
-
-		room.should.be.an.Object();
+		room.should.be.an.Object()
+			.which.be.instanceof(EventEmitter)
 
 		room.should.has.property('name')
 			.be.exactly(roomName);
