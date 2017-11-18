@@ -3,7 +3,7 @@
 
 gulp.task('watch.src', cb => {
 
-	gulp.watch(config.js.dest, function() {
+	plugins.watch(config.js.src, function() {
 		gulp.start('change');
 	});
 

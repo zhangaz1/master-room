@@ -1,3 +1,3 @@
-import all from './dest/src/index.js';
+import all from './src/index.js';
 
 module.exports = all;
