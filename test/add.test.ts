@@ -3,11 +3,13 @@ let should = require('should');
 
 // import { should } from 'should';
 
-import { add } from '../src/add';
+import {
+	add
+} from '../src/add';
 
-describe('test add', function() {
+describe('test add', function () {
 
-	it('should can add to number', function() {
+	it('should can add to number', function () {
 		let a = 2;
 		let b = 3;
 
