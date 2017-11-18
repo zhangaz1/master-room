@@ -1,8 +1,6 @@
 'use strict';
 
 
-let should = require('should');
-
 let Room = require('./../src/room.js');
 
 describe('test Room', function () {
