@@ -7,6 +7,6 @@ module.exports = {
 	createRoom,
 };
 
-function createRoom(roomName) {
-	return new Room(roomName);
+function createRoom(roomName, master) {
+	return new Room(roomName, master);
 }

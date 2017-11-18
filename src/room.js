@@ -2,8 +2,9 @@
 
 
 class Room {
-	constructor(name) {
+	constructor(name, master) {
 		this.name = name;
+		this.master = master;
 	}
 }
 
