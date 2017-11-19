@@ -1,4 +1,4 @@
 'use strict';
 
 
-module.exports = require('roomManager');
+module.exports = require('./roomManager.js');
