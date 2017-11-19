@@ -1,6 +1,6 @@
 {
   "name": "master-room",
-  "version": "0.1.1",
+  "version": "0.3.1",
   "description": "chat room for client* <=> 1master",
   "main": "./index.js",
   "scripts": {

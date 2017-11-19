@@ -153,7 +153,6 @@ describe('test Room', function () {
 		room.join(member);
 		room.close();
 
-
 		onClose.should.have.properties({
 			called: true,
 			calledOnce: true,

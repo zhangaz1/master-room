@@ -35,7 +35,7 @@ class Room extends EventEmitter {
 	}
 
 	close() {
-		this.emit(Events.Close);
+		this.emit(Events.Close, this);
 	}
 }
 
