@@ -1,6 +1,4 @@
 'use strict';
 
 
-module.exports = {
-	Room=require('./room'),
-};
+module.exports = require('roomManager');
