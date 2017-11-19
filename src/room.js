@@ -5,6 +5,10 @@ const {
 	EventEmitter
 } = require('./utils.js');
 
+const Events = {
+	Close: 'close'
+};
+
 class Room extends EventEmitter {
 
 	constructor(name, master) {
@@ -16,6 +20,9 @@ class Room extends EventEmitter {
 	}
 
 	join(member) {
+		if(member.onClose){
+			this.on(Events.Close, member.onClose);
+		}
 		this.members.push(member);
 	}
 
@@ -27,9 +34,10 @@ class Room extends EventEmitter {
 			Promise.reject(`master can\'t process request of ${action}`);
 	}
 
-	close(){
-
+	close() {
+		this.emit(Events.Close);
 	}
 }
 
+Room.Events = Events;
 module.exports = Room;

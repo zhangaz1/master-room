@@ -142,4 +142,23 @@ describe('test Room', function () {
 		});
 	});
 
+	it('should can trigger close event when close room', function () {
+		const member = {
+			onClose: function () {
+				// console.log('room closeed');
+			}
+		};
+		const onClose = sinon.spy(member, 'onClose');
+
+		room.join(member);
+		room.close();
+
+
+		onClose.should.have.properties({
+			called: true,
+			calledOnce: true,
+		});
+	});
+
+
 });
